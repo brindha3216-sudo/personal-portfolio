@@ -1,0 +1,296 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7fc;
+    color: #29243b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h2 {
+    color: #7545c8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #29243b;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #7545c8;
+}
+
+/* All Sections */
+section {
+    padding: 70px 10%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #7545c8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Home Section */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #eee6ff, #faf8ff);
+}
+
+#home h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    color: #542c9e;
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+#home a,
+#contact a {
+    display: inline-block;
+    background-color: #7545c8;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin: 5px 8px 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#home a:hover,
+#contact a:hover {
+    background-color: #542c9e;
+    transform: translateY(-2px);
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 17px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f1ebff;
+}
+
+#skills h3 {
+    margin: 20px 0 10px;
+    color: #542c9e;
+}
+
+#skills ul {
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 8px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffffff;
+}
+
+#projects div {
+    background-color: #f8f5ff;
+    padding: 22px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border-left: 5px solid #7545c8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+#projects div:hover {
+    transform: translateY(-4px);
+}
+
+#projects h3 {
+    color: #542c9e;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #eee6ff;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #29243b;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible {
+    outline: 3px solid #e09bff;
+    outline-offset: 4px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 6%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    #home {
+        min-height: 70vh;
+    }
+
+    #home h3 {
+        font-size: 19px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+}
+
+
+/* Skill Cards */
+#skills .skill-card {
+    display: inline-block;
+    width: 220px;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+#skills .skill-card:hover {
+    transform: translateY(-5px);
+}
+
+#skills .skill-card h3 {
+    color: #7545c8;
+    margin-top: 0;
+}
+
+#skills .skill-card p {
+    margin-bottom: 0;
+}
+
+/* Back to Top Button */
+#topBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #7545c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#topBtn:hover {
+    background-color: #542c9e;
+}
+
+/* Digital Clock */
+#clock-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#clock-container h3 {
+    color: #7545c8;
+}
+
+
+/* Digital Clock */
+#clock-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#clock-container h3 {
+    color: #7545c8;
+}
+
+#clock {
+    color: #7545c8;
+    font-size: 28px;
+    font-weight: bold;
+}
+
